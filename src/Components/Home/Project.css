@@ -1,3 +1,29 @@
-.p-list{
-    width: 300px;
+.list-card{
+    width: 100%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(243,242,242);
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+.list-browser{
+    height: 20px;
+    background-color: rgb(243,242,242) ;
+    align-items: center;
+    display: flex;
+    
+}
+.list-circle{
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+}
+.img-card{
+    width: 100%;
+    transition: all 10s ease;
+}
+.list-card:hover .img-card{
+    transform: translateY(-100%);
 }
