@@ -13,7 +13,7 @@ const ProjectList = () => {
             <div className='lists grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5'>
 {
     projects.map((project)=>(
-   <Project img={project.img} key={project.id} link={project.link} live={project.live}></Project>
+   <Project img={project.img} key={project.id} link={project.link} live={project.live} name={project.name}></Project>
     ))
 }
 
