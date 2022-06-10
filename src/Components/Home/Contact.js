@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Contact = () => {
   const formRef = useRef()
@@ -20,11 +21,21 @@ const Contact = () => {
   return (
     <div className="contact mt-12">
       <h2 className="text-3xl text-center font-bold mb-16">
-        Let's Discuss Your Opinion
+      <Typewriter
+            words={['Lets Discuss Your Opinion']}
+         
+            cursor
+            cursorStyle='_'
+            typeSpeed={100}
+            // deleteSpeed={50}
+            // delaySpeed={1000}
+          
+          /> 
       </h2>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold text-rose-500">Contact now!</h1>
+          <h1 className="text-5xl font-bold text-rose-500">
+            Contact now!</h1>
           <p className="py-6"></p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
