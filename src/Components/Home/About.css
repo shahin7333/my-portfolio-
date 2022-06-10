@@ -1,7 +1,4 @@
-.contact{
-    height: 100vh;
-}
-.submit{
+.message{
     padding: 15px 25px;
     border: 2px solid  #f43f5e;
     background: linear-gradient(to right, transparent 50%, #f43f5e 50%);
@@ -9,7 +6,7 @@
     background-position: left;
     transition: background-position 0.5s;
 }
-.submit:hover{
+.message:hover{
     background-position: right;
     color: white;
 }

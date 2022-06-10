@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import "./Navbar.css"
 
 const Navbar = () => {
   const navigate=useNavigate();
@@ -15,9 +16,10 @@ const Navbar = () => {
               <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/project">Projects</Link></li>
               <li><Link to="/home">About</Link></li>
+              <li><Link to="/blogs">Blogs</Link></li>
             </ul>
           </div>
-          <a onClick={()=>navigate("/home")} className="btn btn-ghost normal-case text-xl text-rose-500">Portfolio</a>
+          <a onClick={()=>navigate("/")} className="portfolio btn btn-ghost normal-case text-xl text-rose-500">Portfolio</a>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -25,6 +27,7 @@ const Navbar = () => {
               <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/project">Projects</Link></li>
               <li><Link to="/about">About</Link></li>
+              <li><Link to="/blogs">Blogs</Link></li>
           </ul>
         </div>
       </div>

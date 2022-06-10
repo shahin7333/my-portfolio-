@@ -24,7 +24,7 @@ const Contact = () => {
       </h2>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Contact now!</h1>
+          <h1 className="text-5xl font-bold text-rose-500">Contact now!</h1>
           <p className="py-6"></p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -63,7 +63,7 @@ const Contact = () => {
               <label className="label"></label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn bg-rose-500 border-0">Submit</button>
+              <button className="submit">Submit</button>
             </div>
           
             </form>

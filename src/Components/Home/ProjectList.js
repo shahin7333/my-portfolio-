@@ -8,7 +8,7 @@ const ProjectList = () => {
         <div className='project-list m-16 mx-8'>
             <div className='texts'>
                 <h1 className='mb-3 text-3xl font-bold text-center'>Create and Explore</h1>
-                <p className='text-center'>Here's some collection of my projects. </p>
+                <p className='text-center text-rose-500'>Here's some collection of my projects. </p>
             </div>
             <div className='lists grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5'>
 {

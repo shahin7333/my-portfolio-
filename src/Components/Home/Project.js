@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Project.css"
 
 const Project = ({img,link,live,name}) => {
+    const navigate=useNavigate()
     return (
        <div className='card'>
             <div className='list-card'>
@@ -14,7 +16,7 @@ const Project = ({img,link,live,name}) => {
             <img src={img} alt="" className='img-card' />
         </div>
         <h2 className='text-xl font-bold mb-3'>{name}</h2>
-        <a className="btn bg-rose-500 border-0 px-8" href={live}>Details</a>
+        <a className="details" href={live} >Details</a>
        </div>
     );
 };

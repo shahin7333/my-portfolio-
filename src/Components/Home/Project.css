@@ -27,3 +27,15 @@
 .list-card:hover .img-card{
     transform: translateY(-100%);
 }
+.details{
+    padding: 15px 25px;
+    border: 2px solid  #f43f5e;
+    background: linear-gradient(to right, transparent 50%, #f43f5e 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+}
+.details:hover{
+    background-position: right;
+    color: white;
+}
