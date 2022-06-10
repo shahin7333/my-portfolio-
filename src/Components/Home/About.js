@@ -1,18 +1,23 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import cover from "../../img/cover1.png"
 
 const About = () => {
+    const navigate=useNavigate();
     return (
-        <div className='m-12'>
-            <h2 className='text-2xl text-center font-bold mb-12'>How much I know about these languages?</h2>
-            <p className='mb-4 text-center'>HTML5 || CSS || Javascript || React.js || Node.js</p>
-           <div className='text-center'>
-           <progress className="progress progress-success w-56" value="80" max="100"></progress>
-<progress className="progress progress-success w-56" value="70" max="100"></progress>
-<progress className="progress progress-success w-56" value="70" max="100"></progress>
-<progress className="progress progress-success w-56" value="60" max="100"></progress>
-<progress className="progress progress-success w-56" value="65" max="100"></progress>
-           </div>
-        </div>
+        <div id='about' class="hero my-12" style={{
+            background: `url(${cover})`
+        }}>
+  <div class="hero-overlay bg-opacity-20"></div>
+  <div class="hero-content text-center p-12">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">About Me</h1>
+      <p class="mb-5">Hello, I'm a junior Web Developer having experience on HTML5, CSS, Bootstarp, Tailwid css, Javascript, React.js, Node.js, MongoDb, Express, JWT and other things.</p>
+      <p className='mb-5'>Do you want to know details, you can ask anything int the contact form below.</p>
+      <button onClick={()=>navigate("/contact")} className="btn bg-rose-500 border-0 px-8 m-3">Any Message?</button>
+    </div>
+  </div>
+</div>
     );
 };
 
