@@ -10,7 +10,7 @@ const Contact = () => {
       e.preventDefault()
         emailjs.sendForm('service_axr6r9k', 
         'template_rcotpv7', 
-        formRef.current, 'user_JIlGh4digYD-WjmJ7lTj1')
+        formRef.current, 'RCAQsBDoGX1g58WYV')
       .then((result) => {
           console.log(result.text);
           setDone(true)
