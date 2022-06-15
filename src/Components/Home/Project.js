@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Project.css"
 
-const Project = ({img,link,live,name}) => {
+const Project = ({img,link,live,name,git}) => {
     const navigate=useNavigate()
     return (
        <div className='card'>
@@ -16,7 +16,8 @@ const Project = ({img,link,live,name}) => {
             <img src={img} alt="" className='img-card' />
         </div>
         <h2 className='text-xl font-bold mb-3'>{name}</h2>
-        <a className="details" href={live} >Details</a>
+        <a className="details mb-2" href={live} >Details</a>
+        <a className="details" href={git} >Git Link</a>
        </div>
     );
 };
